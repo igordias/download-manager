@@ -8,11 +8,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
         <EditText
+            android:id="@+id/edt_url"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="ftp://test.rebex.net/pub/example/imap-console-client.png"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/menu"
@@ -22,6 +26,7 @@
             android:hint="@string/hint_protocol">
 
             <AutoCompleteTextView
+                android:id="@+id/protocols_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none" />
@@ -29,6 +34,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btn_download"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/download" />
