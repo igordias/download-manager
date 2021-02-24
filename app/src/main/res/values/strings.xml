@@ -2,4 +2,9 @@
     <string name="app_name">Download Manager</string>
     <string name="hint_protocol">Protocol</string>
     <string name="download">Download</string>
+
+    <string name="message_success">File downloaded successfully!</string>
+    <string name="message_error">Oops, something went wrong. Please, try again later.</string>
+
+    <string name="message_error_form_fields">Please make sure you have filled the necessary fields.</string>
 </resources>
